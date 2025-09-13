@@ -90,7 +90,7 @@ Dirección IP: 192.168.1.15
 ┌───────┬───────┬───────┬───────┐
 │ 192   │ 168   │ 1     │ 15    │   → Cada bloque es 1 byte (8 bits)
 └───────┴───────┴───────┴───────┘
-
+```
 
 ### Conceptos básicos de IP
 - Cada **byte** va de `0 – 255`  
@@ -117,9 +117,9 @@ Máscara: 255.255.255.0 → /24
 
 ### Notación CIDR
 ```sjsx
-- Ejemplo: `192.168.1.15/24` → 24 bits para red, 8 bits para hosts  
+- Ejemplo: 192.168.1.15/24 → 24 bits para red, 8 bits para hosts  
 
-Ejemplo `/28`:
+Ejemplo /28:
 ┌────────────── Red ────────────┐┌─ Host ─┐
 11000000 10101000 00000001 0000 | 1111
 
@@ -163,12 +163,13 @@ Hosts disponibles: 2^4 - 2 = 14
 ---
 
 ### Ejemplo /28
+```sjsx
 Subredes en un /24 con /28 → incremento 16
 
 192.168.1.0/28 → Hosts: 1 - 14 | Broadcast: 15
 192.168.1.16/28 → Hosts: 17 - 30 | Broadcast: 31
 192.168.1.32/28 → Hosts: 33 - 46 | Broadcast: 47
-
+```
 
 
 ---
