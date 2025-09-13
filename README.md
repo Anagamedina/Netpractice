@@ -85,7 +85,7 @@
 ## 📖 Conceptos clave
 
 ### Representación de una IP
-
+```sjsx
 Dirección IP: 192.168.1.15
 ┌───────┬───────┬───────┬───────┐
 │ 192   │ 168   │ 1     │ 15    │   → Cada bloque es 1 byte (8 bits)
@@ -97,17 +97,17 @@ Dirección IP: 192.168.1.15
 - Se escribe en **decimal con puntos**  
 - Internamente: **binario**  
   - Ejemplo: `192 = 11000000`
-
+```
 ---
 
 ## 🖧 Máscara de subred
-
+```sjsx
 IP: 192.168.1.15
 Máscara: 255.255.255.0 → /24
 
 ┌────────────── Red ──────────────┐┌── Host ──┐
 11000000 10101000 00000001 | 00001111
-
+```
 
 
 - La parte **izquierda** (24 bits) es **Red**  
@@ -116,6 +116,7 @@ Máscara: 255.255.255.0 → /24
 ---
 
 ### Notación CIDR
+```sjsx
 - Ejemplo: `192.168.1.15/24` → 24 bits para red, 8 bits para hosts  
 
 Ejemplo `/28`:
@@ -123,11 +124,10 @@ Ejemplo `/28`:
 11000000 10101000 00000001 0000 | 1111
 
 Red → 28 bits
-
 Host → 4 bits
-
 Hosts disponibles: 2^4 - 2 = 14
 
+```
 
 ---
 
