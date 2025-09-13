@@ -1,8 +1,7 @@
 # 🖧 NetPractice – 42 Barcelona
 
 
-> Proyecto de la **Academia 42** para aprender y practicar conceptos de **redes informáticas**.  
-> El objetivo es configurar correctamente distintas topologías de red entendiendo cómo funcionan las **IP, máscaras de subred, routing y comunicación entre hosts**.
+Más información y práctica online: [NetPractice 42](https://ricardoreves.github.io/42-net-practice/)
 
 ---
 
